@@ -1,0 +1,12 @@
+---
+applications:
+- name: elk-kibana
+  path: kibana
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack#v1.6.19
+  command: ./run_kibana.sh
+  health-check-type: process
+  timeout: 180
+  memory: 2048M
+  random-route: true
+  services:
+   - elk-elasticsearch

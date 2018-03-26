@@ -1,0 +1,9 @@
+---
+applications:
+- name: elk-logstash
+  image: docker.elastic.co/logstash/logstash:5.6.8
+  timeout: 180
+  memory: 2048M
+  random-route: true
+  services:
+   - elk-elasticsearch
