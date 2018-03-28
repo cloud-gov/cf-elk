@@ -7,17 +7,17 @@ For [cloud.gov](https://cloud.gov), follow the [quickstart guide](https://cloud.
 ## Usage
 
 1. Follow the [Cloud Foundry command-line (CLI) setup instructions](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
-1. Log into your Cloud Foundry account. (For example, if you use cloud.gov, follow [the "Set up the command line" instructions](https://cloud.gov/docs/getting-started/setup/#set-up-the-command-line) to log in.)
+1. Log into your Cloud Foundry account. (For example, if you use cloud.gov, follow the ["Set up the command line" instructions](https://cloud.gov/docs/getting-started/setup/#set-up-the-command-line) to log in.)
 1. Clone or download this repository, and `cd` into the directory `cf-elk`.
-1. run the deploy script with `./deploy.sh`.  It should:
-    2. Clone the kibana repo with a specific version that we tested out.
-    2. Copy in config that updates the node version to the latest (as of this writing) version that is compatible with kibana.
-    2. Copies in a special startup script that we use to configure kibana at runtime to use the ES service we created above.
-    2. Create an elasticsearch service for you.
-    2. Deploys kibana with `cf push`
-    2. Configures and launches the elk-logstash docker instance
-    2. Sets up the internal service that can be used to drain logs into.
-    2. Loads some sample data into ES.  This may take a while.
+1. Run the deploy script with `./deploy.sh`.  It should:
+    1. Clone the kibana repo with a specific version that we tested out.
+    1. Copy in config that updates the node version to the latest (as of this writing) version that is compatible with kibana.
+    1. Copy in a special startup script that we use to configure kibana at runtime to use the ES service we created above.
+    1. Create an elasticsearch service for you.
+    1. Deploy kibana with `cf push`
+    1. Configure and launch the elk-logstash docker instance
+    1. Set up the internal service that can be used to drain logs into.
+    1. Load some sample data into ES.  This may take a while.
 1. Get the username/password/URL that you will need to use to log into kibana from the end of the output of the script.
 1. Go to the URL.  You may need to wait a bit here for kibana to fully launch.
 1. You may now set a default index (probably @timestamp) and start searching!  Be aware that the data is kind of old, so you might need to set the search scope to be the last 5 years rather than the last 15 minutes.
