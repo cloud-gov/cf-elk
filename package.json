@@ -63,7 +63,9 @@
     "mocha": "echo 'use `node scripts/mocha`' && false",
     "sterilize": "grunt sterilize",
     "uiFramework:start": "grunt uiFramework:start",
-    "uiFramework:build": "grunt uiFramework:build"
+    "uiFramework:build": "grunt uiFramework:build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -128,7 +130,7 @@
     "font-awesome": "4.4.0",
     "glob": "5.0.13",
     "glob-all": "3.0.1",
-    "good-squeeze": "2.1.0",
+    "good-squeeze": "5.0.0",
     "gridster": "0.5.6",
     "h2o2": "5.1.1",
     "handlebars": "4.0.5",
@@ -180,7 +182,7 @@
     "reactcss": "1.0.7",
     "redux": "3.0.0",
     "redux-thunk": "0.1.0",
-    "request": "2.61.0",
+    "request": "2.82.0",
     "resize-observer-polyfill": "1.2.1",
     "rimraf": "2.4.3",
     "rison-node": "1.0.0",
@@ -198,8 +200,9 @@
     "validate-npm-package-name": "2.2.2",
     "vision": "4.1.0",
     "webpack": "github:elastic/webpack#fix/query-params-for-aliased-loaders",
-    "wreck": "6.2.0",
-    "yauzl": "2.7.0"
+    "wreck": "7.2.1",
+    "yauzl": "2.7.0",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "@elastic/eslint-config-kibana": "0.6.1",
@@ -283,5 +286,6 @@
   "engines": {
     "node": "6.12.3",
     "npm": "3.10.10"
-  }
+  },
+  "snyk": true
 }
