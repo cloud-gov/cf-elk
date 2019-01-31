@@ -93,7 +93,7 @@
     "autoprefixer-loader": "2.0.0",
     "babel-cli": "6.18.0",
     "babel-core": "6.21.0",
-    "babel-jest": "20.0.3",
+    "babel-jest": "24.0.0",
     "babel-loader": "6.2.10",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-async-generator-functions": "6.24.1",
