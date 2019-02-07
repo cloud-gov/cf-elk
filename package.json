@@ -70,7 +70,7 @@
     "url": "https://github.com/elastic/kibana.git"
   },
   "dependencies": {
-    "@elastic/datemath": "2.3.0",
+    "@elastic/datemath": "3.0.0",
     "@elastic/filesaver": "1.1.2",
     "@elastic/httpolyglot": "0.1.2-elasticpatch1",
     "@elastic/leaflet-draw": "0.2.3",
@@ -115,7 +115,7 @@
     "d3": "3.5.6",
     "d3-cloud": "1.2.1",
     "dragula": "3.7.0",
-    "elasticsearch": "13.0.1",
+    "elasticsearch": "15.0.0",
     "elasticsearch-browser": "13.0.1",
     "encode-uri-query": "1.0.0",
     "even-better": "7.0.2",
@@ -147,7 +147,7 @@
     "less": "2.7.1",
     "less-loader": "2.2.3",
     "libesvm": "3.9.0",
-    "lodash": "3.10.1",
+    "lodash": "4.17.11",
     "minimatch": "2.0.10",
     "mkdirp": "0.5.1",
     "moment": "2.13.0",
